@@ -21,10 +21,6 @@ export default function Grid({loading, setLoading, getPlayer1Cards, getPlayer2Ca
     setScore1(sc1)
     setScore2(sc2)
   }
-
-  const checkWin = () => {
-    if(player1Cards.length == 0 || player2Cards.length == 0) {}
-  }
   
   const checkValuesTop = (grido, top) => {
     if(selectedCard.player1 !== top.player1 && selectedCard.top > top.bottom) {
@@ -115,7 +111,6 @@ useEffect(() => {
 
 useEffect(() => {
   checkScore()
-  checkWin()
 }, [grid])
   
   return (
