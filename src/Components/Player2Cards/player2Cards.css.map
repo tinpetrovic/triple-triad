@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAC;EACV,KAAK,EAAE,CAAC;EACR,MAAM,EAAE,SAAS;CACpB;;AAED,AAAA,YAAY,CAAC;EACT,UAAU,EAAE,OAAgB;EAC5B,UAAU,ECGI,6DAA+F;CDFhH;;AAED,AAAA,SAAS,CAAC;EACN,MAAM,EAAE,WAAW;EACnB,OAAO,EAAE,EACX;CAAC;;AAEH,MAAM,EAAC,SAAS,EAAE,KAAK;EACnB,AAAA,aAAa,CAAC;IACV,MAAM,EAAE,CAAC;GACZ",
+    "sources": [
+        "player2Cards.scss",
+        "../../_colors.scss"
+    ],
+    "names": [],
+    "file": "player2Cards.css"
+}

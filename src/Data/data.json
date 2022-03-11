@@ -1,0 +1,103 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "name": "Geezard",
+            "top": 1,
+            "right": 4,
+            "bottom": 1,
+            "left": 5,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3120.png"
+        },
+        {
+            "id": 2,
+            "name": "Funguar",
+            "top": 5,
+            "right": 1,
+            "bottom": 1,
+            "left": 3,
+            "img": "https://www.models-resource.com/resources/big_icons/5/4058.png"
+        },
+        {
+            "id": 3,
+            "name": "Bite Bug",
+            "top": 1,
+            "right": 3,
+            "bottom": 3,
+            "left": 5,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3111.png"
+        },
+        {
+            "id": 4,
+            "name": "Red Bat",
+            "top": 6,
+            "right": 1,
+            "bottom": 1,
+            "left": 2,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3128.png"
+        },
+        {
+            "id": 5,
+            "name": "Blobra",
+            "top": 2,
+            "right": 3,
+            "bottom": 1,
+            "left": 5,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3095.png"
+        },
+        {
+            "id": 6,
+            "name": "Gayla",
+            "top": 2,
+            "right": 1,
+            "bottom": 4,
+            "left": 4,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3326.png"
+        },
+        {
+            "id": 7,
+            "name": "Gesper",
+            "top": 1,
+            "right": 5,
+            "bottom": 4,
+            "left": 1,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3124.png"
+        },
+        {
+            "id": 8,
+            "name": "Fastitocalon-F",
+            "top": 3,
+            "right": 5,
+            "bottom": 2,
+            "left": 1,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3119.png"
+        },
+        {
+            "id": 9,
+            "name": "Blood Soul",
+            "top": 2,
+            "right": 1,
+            "bottom": 6,
+            "left": 1,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3113.png"
+        },
+        {
+            "id": 10,
+            "name": "Caterchipillar",
+            "top": 4,
+            "right": 2,
+            "bottom": 4,
+            "left": 3,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3115.png"
+        },
+        {
+            "id": 11,
+            "name": "Cocktarice",
+            "top": 2,
+            "right": 1,
+            "bottom": 2,
+            "left": 6,
+            "img": "https://www.models-resource.com/resources/big_icons/4/3103.png"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+@import "../../colors";
+
+.navbar-container {
+    height: 150px;
+    background: $nav;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.turn1 {
+    color: rgb(106, 155, 252);
+ }
+ 
+ .turn2 {
+     color: lightcoral;
+ }
+
+ .rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+     position: absolute;
+     height: calc(100% + 150px);
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 100;
+     background-color: $modal;
+     transition: .5s ease-in-out
+ }
+
+ .rules-wrapp {
+    background-color: $rules;
+    padding: 2em;
+    width: 90%;
+    margin: 5em auto;
+    border-radius: 10px;
+ }
+
+ .rules-wrapp button{
+    background: $input;
+
+    &:hover,
+    &:focus {
+        background: $favorite
+    }
+ }
+
+ .rules-wrapp h2 {
+     margin-top: 70px;
+ }
+
+ .rules-text {
+     margin-bottom: 2em;
+ }
+
+ .rules-text h2 {
+     margin-top: 1.5em;
+     margin-bottom: .5em
+ }
+
+ @media(min-width:1000px) {
+    .rules {
+        height: 100%;
+    }
+
+    .rules-wrapp {
+         width: 90%;
+         margin: 5em auto;
+    }
+ }

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACb,UAAU,EAAE,OAAgB;EAC5B,UAAU,ECOQ,6DAAgG;CDNjH",
+    "sources": [
+        "player1Cards.scss",
+        "../../_colors.scss"
+    ],
+    "names": [],
+    "file": "player1Cards.css"
+}

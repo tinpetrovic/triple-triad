@@ -1,0 +1,44 @@
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (150px)[3];
+      grid-template-columns: repeat(3, 150px);
+  -ms-grid-rows: (150px)[3];
+      grid-template-rows: repeat(3, 150px);
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  background: #fff;
+}
+
+.grid-place {
+  border: 1px solid #000;
+}
+
+.active:hover, .active:focus {
+  background: #fae5bb;
+  cursor: pointer;
+}
+
+.player1 {
+  background: -webkit-gradient(linear, left top, right top, from(#e6efff), color-stop(35%, #99bcff), to(#3c7eff));
+  background: linear-gradient(90deg, #e6efff 0%, #99bcff 35%, #3c7eff 100%);
+}
+
+.player2 {
+  background: -webkit-gradient(linear, left top, right top, from(#ffe6e6), color-stop(35%, #ff6868), to(#ff3c3c));
+  background: linear-gradient(90deg, #ffe6e6 0%, #ff6868 35%, #ff3c3c 100%);
+}
+
+@media (min-width: 700px) {
+  .grid-container {
+    -ms-grid-columns: (200px)[3];
+        grid-template-columns: repeat(3, 200px);
+    -ms-grid-rows: (200px)[3];
+        grid-template-rows: repeat(3, 200px);
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+/*# sourceMappingURL=grid.css.map */

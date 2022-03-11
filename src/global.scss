@@ -1,0 +1,172 @@
+@import "./colors";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  background-color: $black;
+}
+
+img {
+  display: block;
+  max-width: 100%
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: $white;
+}
+
+h5 {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.nmb {
+  font-size: 15px;
+  font-family: "Libre Baskerville", sans-serif;
+  font-weight: 700;
+  color: $white;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: $black;
+}
+
+.large {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.small {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.extra-small {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.error {
+  color: #EB5757;
+}
+
+.btn {
+  display: inline-block;
+  width: 90px;
+  padding: .3em .9em;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.btn-primary {
+  background-color: #2BD17E;
+  border: 1px solid #2BD17E;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #EB5757;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: #EB5757;
+}
+
+
+/* APP STYLING */
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+
+@media(min-width: 1000px) {
+  h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 17px;
+    margin-top: .2em
+  }
+
+  .nmb {
+    font-size: 30px;
+  }
+
+.app-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2em;
+    }
+}
+

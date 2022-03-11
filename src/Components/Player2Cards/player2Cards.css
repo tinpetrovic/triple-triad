@@ -1,0 +1,24 @@
+.player2Cards {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 2em 0 4em;
+}
+
+.player2Card {
+  background: #ffe6e6;
+  background: -webkit-gradient(linear, left top, right top, from(#ffe6e6), color-stop(35%, #ff6868), to(#ff3c3c));
+  background: linear-gradient(90deg, #ffe6e6 0%, #ff6868 35%, #ff3c3c 100%);
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+@media (min-width: 700px) {
+  .player2Cards {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=player2Cards.css.map */

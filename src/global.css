@@ -1,0 +1,225 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  background-color: #ffd071;
+  color: #000;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.large {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.extra-small {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.error {
+  color: #EB5757;
+}
+
+.btn {
+  display: inline-block;
+  width: 90px;
+  padding: .3em .9em;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.btn-primary {
+  background-color: #2BD17E;
+  border: 1px solid #2BD17E;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #EB5757;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+  background-color: #EB5757;
+}
+
+/* APP STYLING */
+.app-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+.player1Cards,
+.player2Cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1em;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100px;
+}
+
+.card:hover, .card:focus {
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.card-numbers-wrapp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.nmb-top {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.nmb-left {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.nmb-right {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.nmb-bottom {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.card {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .app-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 2em;
+  }
+  .player1Cards,
+  .player2Cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=global.css.map */

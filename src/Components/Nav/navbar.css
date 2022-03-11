@@ -1,0 +1,13 @@
+.navbar-container {
+  height: 150px;
+  background: #092C39;
+  color: #fff;
+  display: FLEX;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=navbar.css.map */

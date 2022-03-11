@@ -1,0 +1,6 @@
+.player1Card {
+  background: #e6efff;
+  background: -webkit-gradient(linear, left top, right top, from(#e6efff), color-stop(35%, #99bcff), to(#3c7eff));
+  background: linear-gradient(90deg, #e6efff 0%, #99bcff 35%, #3c7eff 100%);
+}
+/*# sourceMappingURL=player1Cards.css.map */

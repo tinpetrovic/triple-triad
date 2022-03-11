@@ -1,0 +1,150 @@
+@import "../../colors";
+
+.player1Cards,
+.player2Cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.player1Cards h4,
+.player2Cards h4 {
+  margin-bottom: 1em;
+}
+
+.player1Card {
+    background: rgb(230,239,255);
+    background: $player1Gradient
+}
+
+.player2Card {
+    background: rgb(255,230,230);
+    background: $player2Gradient
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.card + .card {
+  margin-left: -3em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    border: 5px solid gold;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 20px  $white;
+      border: 5px solid $black;
+      bottom: 20px;
+      z-index: 500;
+    }
+}
+
+.card-img {
+  height: 50%;
+  width: 50%;
+  margin-bottom: .5em;
+}
+
+
+/* Card & Grid Numbers */
+
+.nmb-wrapper {
+    position: absolute;
+    top: .2em;
+    left: .2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-content: center;
+}
+
+.nmb-top {
+    grid-column: 2;
+    width: 100%;
+}
+
+.nmb-right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.nmb-left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.nmb-bottom {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+
+.disabled {
+    opacity: .3
+  }
+
+  .not-allowed {
+    cursor:not-allowed;
+  }
+
+  @media(min-width: 800px) {
+    .card + .card {
+      margin-left: 0;
+    }
+    
+    .cards {
+      gap: .5em
+    }
+}
+
+@media(min-width: 1000px) {
+  .player1Cards,
+  .player2Cards {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .player2Cards {
+    align-items: flex-end;
+  }
+  
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card + .card {
+    margin-left:0;
+  }
+
+  .card {
+    margin-bottom: -3em;
+
+      &:hover,
+      &:focus {
+        bottom: 20px;
+        z-index: 500;
+      }
+  }
+  
+  .nmb-wrapper {
+    top: .5em;
+    left: .5em;
+}
+  
+  }
+  

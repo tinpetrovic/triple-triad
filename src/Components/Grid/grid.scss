@@ -1,0 +1,124 @@
+@import "../../colors";
+
+.modal {
+    display: none
+}
+
+.body .modal-win {
+    overflow: hidden;
+}
+
+.modal-win {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: calc(100% + 100px);
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+    background: $modal
+}
+
+.modal-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    margin-top: 20em;
+    border-radius: 10px;
+    background: $white;
+}
+
+.modal-info h2 {
+margin-bottom: 1em;
+}
+
+.modal-info button {
+    width: 50%;
+}
+
+.grid-container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    order: 3;
+    background-color: $black;
+    background-image: url("https://mcdn.wallpapersafari.com/medium/98/70/JzFBhU.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.grid-place {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    border: 1px solid $white;
+}
+
+.grid-place img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: .5em;
+}
+
+.active {
+    &:hover,
+    &:focus {
+        background: $selected;
+        cursor: pointer;
+    }
+}
+
+.player1 {
+    background: $player1Gradient
+}
+
+.player2 {
+    background: $player2Gradient
+}
+
+.score-wrapp {
+    margin: 1em 0 2em;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+}
+
+.score-wrapp h5 {
+    background: $white;
+    color: $black;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+h5 span {
+    font-weight: 800;
+}
+
+@media(min-width: 1000px) {
+    .modal-win {
+        height: 100%;
+    }
+
+    .modal-info {
+        width: 70%;
+    }
+    
+    .grid-container {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    order: 2
+    }
+}
+
+@media(min-width: 1200px) {
+    .modal-info {
+        width: 60%;
+    }
+}
