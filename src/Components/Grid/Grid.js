@@ -109,11 +109,7 @@ export default function Grid({loading, setLoading, getPlayer1Cards, getPlayer2Ca
   }
 
 useEffect(() => {
-  setLoading(true)
-  console.log(loading)
   setGrid(data.grid)
-  setLoading(false)
-  console.log(loading)
 }, [])
 
 
@@ -124,7 +120,7 @@ useEffect(() => {
   
   return (
     <div className='container'>
-            <div className={!loading && player1Cards.length == 0 && score1>0 || score2>0 || !loading && player2Cards.length == 0 && score1>0 || score2>0 ? "modal modal-win" : "modal"}>
+            <div className={!loading && player1Cards.length == 0 || !loading && player2Cards.length == 0 ? "modal modal-win" : "modal"}>
                   <div className='modal-info'>
                     {score1 > score2 && <h2>🎉 Player 1 Wins! 🎉</h2>}
                     {score2 > score1 && <h2>🎉 Player 2 Wins! 🎉</h2>}

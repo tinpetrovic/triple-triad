@@ -16,7 +16,7 @@ export default function Player1Cards({loading, player1Cards}) {
   return (
     <div className='player1Cards'>
         <h4>Player 1 Cards:</h4>
-        {loading ? <h2>Loading</h2> : 
+        {loading ? <h2>Loading...</h2> : 
         <div className={!player1Turn ? "cards disabled" : "cards"}>
         {player1Cards.map((card, i) => (
             <div onClick={() => selectCard(card.id)} key={i} className={!player1Turn ? "card player1Card not-allowed" : 'card player1Card'}>

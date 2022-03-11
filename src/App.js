@@ -22,7 +22,7 @@ function App() {
   const [player2Cards, setPlayer2Cards] = useState([])
   const [score1, setScore1] = useState()
   const [score2, setScore2] = useState()
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const [selectedCard, setSelectedCard, player1Turn, setPlayer1Turn] = useContext(GameContext)
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
  let arr = []
@@ -39,31 +39,24 @@ function App() {
 
 
   const getPlayer1Cards = () => {
-    setLoading(true)
   for(let i=1; i<=5; i++) {
     let random = Math.floor(Math.random() * data.cards.length)
      arr.push(data.cards[random])
    }
    let epicArr = arr.map(item => ({...item, id:uuidv4(), player1: true}))
    setPlayer1Cards(epicArr)
-   setLoading(false)
   }
 
   const getPlayer2Cards = () => {
-    setLoading(true)
     for(let i=1; i<=5; i++) {
       let random = Math.floor(Math.random() * data.cards.length)
        arr2.push(data.cards[random])
      }
      let epicArr = arr2.map(item => ({...item, id:uuidv4(), player1: false}))
      setPlayer2Cards(epicArr)
-     setLoading(false)
     }
 
-
-
   useEffect(() => {
-    setLoading(true)
     getPlayerTurn()
     getPlayer1Cards()
     getPlayer2Cards()
@@ -73,7 +66,6 @@ function App() {
     }
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-    
   }, [])
 
   return (

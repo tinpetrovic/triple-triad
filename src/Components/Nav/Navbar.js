@@ -5,7 +5,6 @@ import {GameContext} from "../../Context/GameContext"
 export default function Navbar() {
   const [selectedCard, setSelectedCard, player1Turn] = useContext(GameContext)
   const [rules, setRules] = useState(false)
-  console.log(rules)
 
   const readRules = () => {
     setRules(!rules)
