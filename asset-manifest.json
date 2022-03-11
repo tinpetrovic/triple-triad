@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/triple-triad/static/css/main.bac909e3.css",
+    "main.js": "/triple-triad/static/js/main.1b9599a7.js",
+    "index.html": "/triple-triad/index.html",
+    "main.bac909e3.css.map": "/triple-triad/static/css/main.bac909e3.css.map",
+    "main.1b9599a7.js.map": "/triple-triad/static/js/main.1b9599a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bac909e3.css",
+    "static/js/main.1b9599a7.js"
+  ]
+}
